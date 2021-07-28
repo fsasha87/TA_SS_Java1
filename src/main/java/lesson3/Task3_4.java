@@ -18,20 +18,18 @@ public class Task3_4 {
             fibN.add(k);
         }
         System.out.println(fibN);
-    }
 
-//    static void percentFib() {
-//        int oddCounter = 0;
-//        int evenCounter = 0;
-//        for (int i = 0; i < fibN.size(); i++) {
-//            int k = fibN.get(i);
-//            if (k % 2 == 1) {
-//                oddCounter++;
-//            } else {
-//                evenCounter++;
-//            }
-//        }
-//        System.out.println("Percent of odd numbers: " + oddCounter / fibN.size() * 100);
-//        System.out.println("Percent of even numbers: " + evenCounter / fibN.size() * 100);
-//    }
+        int oddCounter = 0;
+        int evenCounter = 0;
+        for (int i = 0; i < fibN.size(); i++) {
+            int k = fibN.get(i);
+            if (k % 2 == 1 || k == 1) {
+                oddCounter++;
+            } else {
+                evenCounter++;
+            }
+        }
+        System.out.println("Percent of odd numbers: " + Math.round(((float) oddCounter / (float) fibN.size()) * 100) + "%");
+        System.out.println("Percent of even numbers: " + Math.round((float) evenCounter / (float) fibN.size() * 100) + "%");
+    }
 }

@@ -5,6 +5,6 @@ public class Main {
 
         Task1_2.sumOddNumber();
         Task3_4.printFibonachi();
-//        Task3_4.percentFib();
+
     }
 }
